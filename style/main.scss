@@ -2,25 +2,25 @@
 @import 'neat';
 @import 'var';
 @import 'chrome';
-@import 'sgss';
+//@import 'sgss';
 
-.item {
-    @include grid-col;
-    border: 1px solid #000000;
+// .item {
+//     @include grid-col;
+//     border: 1px solid #000000;
 
-    @media (min-width: 30em) {
-        @include grid-col("one half");
-    }
+//     @media (min-width: 30em) {
+//         @include grid-col("one half");
+//     }
 
-    @media (min-width: 40em) {
-        @include grid-col("one third");
-    }
+//     @media (min-width: 40em) {
+//         @include grid-col("one third");
+//     }
 
-    @media (min-width: 50em) {
-        @include grid-col("one quarter");
-    }
+//     @media (min-width: 50em) {
+//         @include grid-col("one quarter");
+//     }
 
-    @media (min-width: 60em) {
-        @include grid-col("one sixth");
-    }
-}
+//     @media (min-width: 60em) {
+//         @include grid-col("one sixth");
+//     }
+// }

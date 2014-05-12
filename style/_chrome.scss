@@ -1,10 +1,40 @@
 body {
 	font-family: helvetica neue, helvetica, arial, san-serif;
 	color: #FFFFFF;
+	background-color: #DCDCDC;
+	text-align: center;
 
+}
+
+header, #container {
+	text-align: left;
+}
+header, footer {
+	width: 100%;
+	padding: 1em;
+	background: #AAA;
+	position: absolute;
+}
+
+footer {
+	bottom: 0;
+}
+
+header {
+	top: 0;
+
+	li:first-child {
+		float: left;
+	}
+
+	li:last-child {
+		float:right;
+	}
 }
 
 #container {
+	max-width: 1080px;
 	background-color: #EBEBEB;
-}
+	margin: 5em auto 0 auto;
+	}
 
