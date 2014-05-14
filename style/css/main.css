@@ -580,7 +580,13 @@ section {
   margin-left: -1.5em; }
 
 .item {
-  height: 20em;
-  width: 20em;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  display: block;
   float: left;
-  margin: .1em; }
+  margin: .1em;
+  overflow: hidden;
+  position: relative; }
+  .item p {
+    position: absolute; }

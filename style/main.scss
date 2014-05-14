@@ -8,10 +8,17 @@
 @import 'sgss';
 
 .item {
-	height: 20em;
-	width: 20em;
+	width: 30%;
+	height: 0;
+	padding-bottom: 30%;
+	display: block;
 	float: left;
 	margin: .1em;
+	overflow: hidden;
+	position: relative;
+	p {
+		position: absolute;
+	}
 
     // @include grid-col;
     // border: 1px solid #000000;
