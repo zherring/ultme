@@ -435,33 +435,52 @@ table {
 body {
   font-family: helvetica neue, helvetica, arial, san-serif;
   color: #FFFFFF;
-  background-color: #DCDCDC;
+  background-color: #ebebeb;
   text-align: center; }
 
 header, #container {
   text-align: left; }
 
-header, footer {
+header, footer, section {
   width: 100%;
   padding: 1em;
-  background: #AAA;
-  position: absolute; }
+  position: fixed; }
+
+header, footer {
+  background: #aaa; }
 
 footer {
-  bottom: 0; }
+  bottom: 0;
+  height: 2em; }
 
 header {
-  top: 0; }
+  top: 0;
+  height: 2em; }
   header li:first-child {
     float: left; }
   header li:last-child {
     float: right; }
 
+section {
+  top: 2em;
+  bottom: 2em;
+  overflow: scroll; }
+
 #container {
   max-width: 1080px;
-  background-color: #EBEBEB;
   margin: 4.2em auto 0 auto;
-  overflow: auto; }
+  overflow: auto;
+  padding: 1em;
+  overflow: hidden; }
+
+.count {
+  background: #51c942; }
+
+.rating {
+  background: #e47154; }
+
+.binary {
+  background: #80cada; }
 
 /**
  * Columns in SSGS rely on `box-sizing: border-box;` in order to work properly.
@@ -535,11 +554,6 @@ header {
         }
     }
  */
-.item {
-  display: block;
-  float: left;
-  padding-left: 1.5em; }
-
 /**
  * One of the most cumbersome things with traditional grid system is their use of
  * classes like `.end`, `.omega` or the like in order to remove the gutter at the start
@@ -566,17 +580,7 @@ header {
   margin-left: -1.5em; }
 
 .item {
-  width: 100%;
-  border: 1px solid #000000; }
-  @media (min-width: 30em) {
-    .item {
-      width: 50%; } }
-  @media (min-width: 40em) {
-    .item {
-      width: 33.333%; } }
-  @media (min-width: 50em) {
-    .item {
-      width: 25%; } }
-  @media (min-width: 60em) {
-    .item {
-      width: 16.666%; } }
+  height: 20em;
+  width: 20em;
+  float: left;
+  margin: .1em; }

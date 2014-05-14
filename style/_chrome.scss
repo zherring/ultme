@@ -1,7 +1,7 @@
 body {
 	font-family: helvetica neue, helvetica, arial, san-serif;
 	color: #FFFFFF;
-	background-color: #DCDCDC;
+	background-color: $bg-color;
 	text-align: center;
 
 }
@@ -9,19 +9,26 @@ body {
 header, #container {
 	text-align: left;
 }
-header, footer {
+header, footer, section {
 	width: 100%;
 	padding: 1em;
-	background: #AAA;
-	position: absolute;
+	position: fixed;
+}
+
+header, footer {
+	background: #aaa;
 }
 
 footer {
 	bottom: 0;
+	height: 2em;
 }
+
+
 
 header {
 	top: 0;
+	height: 2em;
 
 	li:first-child {
 		float: left;
@@ -32,10 +39,28 @@ header {
 	}
 }
 
+
+section {
+	top: 2em;
+	bottom: 2em;
+	overflow: scroll;
+}
+
+
 #container {
 	max-width: 1080px;
-	background-color: #EBEBEB;
 	margin: 4.2em auto 0 auto;
 	overflow: auto;
+	padding: 1em;
+	overflow: hidden;
 	}
 
+.count {
+	background: $count-c;
+}
+.rating {
+	background: $rating-c;
+}
+.binary {
+	background: $binary-c;
+}
