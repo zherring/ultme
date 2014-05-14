@@ -432,18 +432,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  font-family: helvetica neue, helvetica, arial, san-serif;
-  color: #FFFFFF;
-  background-color: #ebebeb;
-  text-align: center; }
-
-header, #container {
-  text-align: left; }
-
 header, footer, section {
   width: 100%;
-  padding: 1em;
   position: fixed; }
 
 header, footer {
@@ -468,10 +458,33 @@ section {
 
 #container {
   max-width: 1080px;
-  margin: 4.2em auto 0 auto;
+  margin: 0 auto;
   overflow: auto;
-  padding: 1em;
+  padding: .1em;
   overflow: hidden; }
+
+.item {
+  width: 33%;
+  height: 0;
+  padding-bottom: 33%;
+  display: block;
+  float: left;
+  margin: .1em;
+  overflow: hidden;
+  position: relative; }
+  .item p {
+    position: absolute; }
+  .item h2 {
+    font-size: 3.5vw;
+    padding: .3em;
+    opacity: .8;
+    margin-bottom: .4em; }
+  .item label {
+    font-weight: lighter; }
+  .item .int {
+    font-size: 5vw; }
+  .item .string {
+    font-size: 4vw; }
 
 .count {
   background: #51c942; }
@@ -482,6 +495,17 @@ section {
 .binary {
   background: #80cada; }
 
+@media all and (max-width: 1020px) {
+  .item {
+    width: 49%;
+    padding-bottom: 49%; }
+    .item h2 {
+      font-size: 7vw;
+      margin: .4em .2em .4em; }
+    .item .int {
+      font-size: 12vw; }
+    .item .string {
+      font-size: 12vw; } }
 /**
  * Columns in SSGS rely on `box-sizing: border-box;` in order to work properly.
  * It is considered good practice to just apply the 'correct' box-sizing to all
@@ -579,14 +603,11 @@ section {
 .grid {
   margin-left: -1.5em; }
 
-.item {
-  width: 30%;
-  height: 0;
-  padding-bottom: 30%;
-  display: block;
-  float: left;
-  margin: .1em;
-  overflow: hidden;
-  position: relative; }
-  .item p {
-    position: absolute; }
+body {
+  font-family: helvetica neue, helvetica, arial, san-serif;
+  color: #FFFFFF;
+  background-color: #ebebeb;
+  text-align: center; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: lighter; }

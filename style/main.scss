@@ -1,24 +1,15 @@
+//extend sass
 @import 'bourbon';
 @import 'neat';
-
+// normalize for webapp
 @import 'normalize';
 
+// ancillary for app
 @import 'var';
 @import 'chrome';
 @import 'sgss';
+@import 'basic';
 
-.item {
-	width: 30%;
-	height: 0;
-	padding-bottom: 30%;
-	display: block;
-	float: left;
-	margin: .1em;
-	overflow: hidden;
-	position: relative;
-	p {
-		position: absolute;
-	}
 
     // @include grid-col;
     // border: 1px solid #000000;
@@ -40,4 +31,3 @@
     // @media (min-width: 60em) {
     //     @include grid-col("one sixth");
     // }
-}
